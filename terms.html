@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(1.6, 1.6, 1.6, 1.6);
+  margin: 10px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-height: 250px;
+  max-width:150px;
+padding: 10px;
+color:blue;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  background-color: #99A3A3; /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+
+.button2 {background-color: #F6BE00; /* Blue */
+border: none;
+  color: white;
+  padding: 12px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 100%;
+    display: circle;
+  }
+
+main{
+        background: linear-gradient(
+            to right,
+           Grey 0%,
+           black 50%,
+           black 75%,
+           grey 100%
+        );
+        padding: 10px;
+        text-align: center;
+        color: ;
+        font-size: 1.5rem;
+    }
+h6{
+        padding: 10px;
+        text-align: left;
+        color: #000000;
+        font-size: 0.5 rem;
+    }
+h3{
+        padding: 1px;
+        text-align: center;
+        color: blue;
+        font-size: 0.5 rem;
+    }
+h2{
+        padding: 10px;
+        text-align: center;
+        color: black;
+        font-size: 0.5 rem;
+    }
+p2{
+        padding: 10 px;
+        text-align: left;
+        color: black;
+        font-size: 1.5 rem;
+   }
+p1{
+        padding: 10px;
+        text-align: left;
+        color: #000000;
+        font-size: 0.5 rem;
+   }
+
+p{
+        padding: 10 px;
+        text-align: centre;
+        color: white;
+        font-size: 50 px;
+   }
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<mark class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+   <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h1 class="w3-wide"><b>FOOKERY</b></h1>
+  </div>
+    <h3>Discover</h3>
+<ol><a href="">Table Bookings</a></ol>
+<ol><a href="">Delivery near me</a></ol>
+<ol><a href="">Takeaway near me</a></ol>
+<ol><a href="">Fast Food near me</a></ol>
+<ol><a href="">Prepaid Deals near me</a></ol>
+    <h3>.For Restaurants</h3>
+<ol><a href="">List Your Restaurant</a></ol>
+<ol><a href="">Restaurant saas</a></ol>
+<h3>More</h3>
+<ol><a href="">Food Critics</a></ol>
+<ol><a href="">Advisory Council</a></ol>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</mark>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-medium w3-black w3-medium">
+  <section class="w3-bar-item w3-padding-24 w3-wide">FOOKERY</section>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+  
+
+
+
+ <!-- Image header -->
+  <div class="w3-display-container w3-container w3-large">
+   
+   
+      
+    </div>
+  </div>
+  
+
+  <!-- Product grid -->
+  <footer class="w3-padding-16 w3-white w3-small w3-center" id="footer">
+
+ 
+<h2>Terms and Conditions</h2>
+
+<h6>In using this website you are deemed to have read, understood, and agreed to the following Terms and Conditions set forth by FookeryDine:</h6>
+
+ 
+
+User Agreement
+
+<h6>This website is published and maintained by FookeryDine.</h6>
+
+<h6>When you access, browse, or use any services provided by FookeryDine, you accept the terms and conditions set forth below, without limitation.</h6>
+
+<h6>These Terms and Conditions constitute the entire agreement between FookeryDine and the user with respect to the use of the website, mobile application, or any other services offered solely by FookeryDine.</h6>
+
+ 
+
+Terms of Use
+
+<h6>By using the services of FookeryDine, be it the website, mobile application, or concierge service, you acknowledge that you have read and understood the terms of use and agree to be bound by them.</h6>
+
+ <h6>While people under the age of 18 can use the services of FookeryDine they must do so under the guidance of their parents and/ or legal guardians.</h6>
+
+<h6>With regards to any services provided by FookeryDine involving the consumption of alcohol, the user must warrant that they are of legal drinking age in strict adherence to specific state laws and the Government of India. For example, Delhi NCR users booking at bars should be a minimum of 21 years or above.</h6>
+
+ 
+
+What will we do with your personal information?
+
+<h6>We at FookeryDine are committed to protecting and ensuring your privacy. Only authorized employees within the company have access to the user’s details and information & are prohibited from using this information for any personal or commercial use.</h6>
+
+<h6>Client records are regarded as confidential and will not be divulged to any third party, other than to appropriate authorities, only if legally required. We will not sell, share, or rent your personal information to any third party.</h6>
+
+<h6>Any emails sent by this Company will only be in connection with the provision of agreed services and products.</h6>
+
+<h6>We also need to share customer's details with specific restaurants, where a reservation has been made, for a better customer experience. The restaurant may also contact customers for the given reservation or for any promotions afterward.</h6>
+
+
+What is FookeryDine responsible for?
+
+<h6>FookeryDine offers a reservation service between the user and the restaurants and does not accept any liability arising out of your dining experience regarding quality of service or food, as it is delivered by a restaurant and not by FookeryDine.</h6>
+
+<h6>FookeryDine is not liable for any changes in menu or pricing at the restaurant.</h6>
+
+<h6>The deal provided by FookeryDine will only be applicable along with a meal at the restaurant.</h6>
+
+<h6>We will investigate any written complaints against a restaurant on receipt of complete details.</h6>
+
+ 
+
+Cancellation, No Show
+
+<h6>FookeryDine is committed to providing convenient and quality service to our users. To help us in maintaining this level of service, we urge our users to cancel or edit their reservations if they will be unable to reach the restaurant at the decided time. Also, no points will be credited for the reservation if the user does not avail of the FookeryDine deal at the restaurant.</h6>
+
+<h6>The first time you miss your reservation without canceling it, FookeryDine will give you a warning.
+</h6>
+
+<h6>If this happens for the second time, we will charge ₹250 additional in your next booking.</h6>
+
+<h6>Continuous third time happened the users’ accounts will deactivated.</h6>
+
+<h6>If, however, there is a misunderstanding and you were at the restaurant, please write to us with a copy of the bill or any other proof of charge and we will address the same immediately, as well as credit the FookeryPoints you earned with this reservation into your account.</h6>
+
+ 
+
+Q. Are there any guidelines for Bill Upload?
+
+<h6>The bill images should be clear with Bill number, Restaurant name, Date, Time, and Amount.</h6>
+
+<h6>Handwritten bills or manual entries will not be accepted.</h6>
+
+<h6>The bill images must be uploaded within 7 days of the dining date.</h6>
+
+<h6>The table must be reserved through Fookery to be able to upload the bill.
+</h6>
+
+<h6>FookeryPoints will be credited in 24 hours of bill upload.</h6>
+
+<h6>There must be no other discount or offer available.</h6>
+
+<h6>You can upload a maximum of 5 photos.</h6>
+
+Q. Are prepaid deals cancellable?
+
+<h6>Yes, prepaid deals are cancellable.</h6>
+
+
+Refund policy 
+
+<h6>Prepaid deals are refundable and cancellable.</h6>
+
+<h6>In case of refunds, it will be processed within 15 working days through online mode.</h6>
+
+
+User Communication Guidelines
+
+<h6>We send our users (registered with us) regular communications about our products and offers.</h6>
+
+<h6>Users can send us email to remove them from marketing communications, however, they will always get messages related to bookings, etc.</h6>
+
+
+User Review Guidelines
+
+<h6>Here are a couple of things we would love for you to keep in mind while writing your reviews:</h6>
+
+<h6>You can leave a review about your experience by visiting the restaurant page & clicking on “Write your own review” on the User Review section OR by clicking on the “Write A Review” tab on the emailer you receive from us after you have dined at the restaurant.</h6>
+
+<h6>All reviews need to be a minimum of 100 characters long.</h6>
+
+<h6>Simply tap on the circles to give a rating out of 5. From 1 being “Terrible” to 5 being “Excellent”.</h6>
+
+<h6>You will be asked to enter your month of visit, type of visit & a suitable title for your review.</h6>
+
+<h6>Then you can start to write the review about your experience. You can also add pictures with your review. Please refrain from submitting plagiarized or false content and write your reviews based solely on your personal experiences and opinions.</h6>
+
+<h6>Please refrain from using any foul, abusive, hateful or prejudiced language.</h6>
+
+<h6>Please inform the appropriate authorities directly in case of any complaints with a business, especially those that involve illegal or inappropriate activities or health code violations.</h6>
+
+Photo guidelines
+
+<h6>Food & Ambiance shots must be clear, in focus and only of that particular restaurant.</h6>
+
+<h6>Duplicate, plagiarized, promotional, objectionable or derogatory photographs should not be posted. </h6>
+
+Terms & Conditions:
+
+<h6>Everything you share, including reviews, photos, your profile and comments are all subject to the guidelines above.</h6>
+
+ Referral Program Terms & Conditions and FAQs:
+
+
+<h6>How many friends can I invite? What will be the maximum money that I can earn?</h6>
+
+<h6>You can invite any number of friends and earn money according to the following rules:</h6>
+
+<h6>For every friend you refer to the FookeryDine app, you’ll get a ₹300 dining voucher.</h6>
+
+<h6>When you refer FookeryDine Prime to a friend and they purchase an Annual Prime membership, you’ll get a ₹500 Amazon gift card, while they get ₹500 off their membership fee.</h6>
+
+<h6>Please note, referral invite is only valid for friends who have never registered/signed up on FookeryDine app.  </h6>
+
+
+What is Eligible Referral Booking? 
+
+<h6>Any booking satisfying following conditions is considered as Eligible Referral Booking. Referral is earned when the eligible booking will be marked completed.</h6>
+
+<h6>Postpaid table booking above Rs. 500. This will be marked completed after the bill uploaded by the customer is accepted by FookeryDine. Please note, bill upload is mandatory for this step.</h6>
+
+<h6>Prepaid table booking above Rs. 500 (excluding coupon). This will be marked completed automatically within 24 hours of the dining date.</h6>
+
+<h6>Prepaid voucher purchase above Rs. 500 (excluding coupon). This will be marked completed instantly.
+</h6>
+
+Termination and Changes
+
+<h6>FookeryDine may suspend or terminate the Referral Program or a user’s ability to participate in the Referral Program at any time for any reason. FookeryDine reserves the right to suspend accounts or remove Wallet Cash if we notice any activity that we believe is abusive, fraudulent, or in violation of the FookeryDine Terms of Service. We reserve the right to review and investigate all referral activities and to suspend accounts or modify referrals in our sole discretion as deemed fair and appropriate. </h6>
+
+
+Updates to the Referral Terms & Conditions
+
+<h6>FookeryDine can update these terms at any time without prior notice. Referral Terms & Conditions will be modified to show the updated Terms & Conditions. Continued participation in the Referral Program after any modification shall constitute consent to such modification.</h6>
+
+
+How to Earn FookeryPoints 
+
+<h6>200 FookeryPoints on creating a verified account on the FookeryDine App or Website (signup)</h6>
+
+<h4>Completion of Table Reservation Bookings:</h4>
+
+<h6>50 FookeryPoints per diner for Prime members (2x)</h6>
+
+<h6>25 FookeryPoints per diner for non-Prime members</h6>
+
+<h6>50 FookeryPoints on writing a restaurant review</h6>
+
+<h4>Completion of Delivery or Takeaway orders:</h4>
+
+<h6>50 FookeryPoints for Prime members</h6>
+
+<h6>25 FookeryPoints for non-Prime members</h6>
+
+<h6>50 FookeryPoints on writing a restaurant review</h6>
+
+<h6>Minimum order value to be Rs.500
+</h6>
+
+<h4>For Prepaid Vouchers</h4>
+
+<h6>If price is > Rs.100 and <= Rs.200
+</h6>
+
+<h6>20 FookeryPoints Prime members
+</h6>
+
+<h6>10 FookeryPoints for non-Prime members</h6>
+
+<h6>If the price is >Rs.200</h6>
+
+<h6>20 FookeryPoints for Prime members</h6>
+
+<h6>10 FookeryPoints for non-Prime members</h6>
+
+<h6>All points will expire if you have not dined with FookeryPoints in the last 6 months.</h6>
+
+<h6>Unless mentioned explicitly, no two offers can be combined. If a customer is earning any partner privileges, (e.g. AMEX/CITI/ VISTARA, etc), customers will not be eligible for booking related FookeryPoints.</h6>
+
+
+Choosing a Dining Privilege
+
+<h6>Customers will need to choose the specific privilege program at the time of checkout.</h6>
+
+<h6>Only the chosen program privileges will be applicable. If the booking is made through a concierge, the customer will need to tell the concierge to choose the specific program.</h6>
+
+<h6>Please note that earning FookeryPoints is also a privilege and if a customer has chosen a specific partner privilege (e.g. AMEX or JET), only those privileges will be applicable.</h6>
+
+
+What policies are the users agreeing to?
+
+<h6>FookeryDine provides a service between users and restaurants and has no control or right over specific restaurant policies.</h6>
+
+<h6>All users will have to agree and adhere to the policies set by the restaurants that they dine at.</h6>
+
+<h6>These policies include but are not limited to; child policy, legal age of entry and legal drinking age.</h6>
+
+<h6>FookeryDine will take utmost care while awarding the FookeryPoints. If at any point, FookeryDine discovers that extra points were awarded, FookeryPoints reserves the right to reverse these points.</h6>
+
+ 
+
+What can you share on FookeryDine?
+
+<h6>Users are prohibited from posting or transmitting any defamatory, obscene, pornographic, profane, threatening or unlawful material or any content that could constitute or encourage conduct that would be considered a criminal offense or harm minors, contain software virus, give rise to civil liability, or otherwise violate any law.</h6>
+
+<h6>FookeryDine assumes no responsibility arising from the contents of any communications containing any such material.</h6>
+
+<h6>FookeryDine reserves the right to change, edit or remove any user material or conversations that are illegal, indecent or violate company policy.</h6>
+
+<h6>FookeryDine will fully cooperate with any law enforcement authorities or court order requesting or directing FookeryDine to disclose the identity of anyone posting such remarks.</h6>
+
+ 
+
+What are the copyright policies for FookeryDine?
+
+<h6>The website is for personal use only. Any distribution or use of the website content, including text, images, audio and video, for any business, commercial or public purpose without prior permission is subject to legal action.</h6>
+
+<h6>It is restricted to display, host, upload, modify, publish, transmit, update or share any information without prior permission.</h6>
+
+<h6>FookeryDine's logo is a registered trademark of this Company in India and other counties. The brand names and specific services of this Company featured on this web site are trademarked.</h6>
+
+<h6>All materials on the website, including but not limited to audio, images, software, text, icons and the like are protected by copyright under international conventions and copyright laws.</h6>
+
+<h6>Any unauthorised use of website content may violate copyright laws, trademark laws, the laws of privacy and publicity, and civil and criminal statute.</h6>
+
+<h6>Users may download the content to be used only for personal use. If you download any content, you shall not remove any copyright or trademark notices or other notices that go with it.</h6>
+
+<h6>As long as you comply with the terms, FookeryDine grants you the right to enter, view and use the website and mobile application. You agree not to interrupt or attempt to interrupt the operation of FookeryDine in any way.</h6>
+
+<h6>Access to certain areas of the website may only be available to registered members.</h6>
+
+<h6>To become a registered member, you may be required to answer certain questions. Answers to such questions may be mandatory and/or optional.</h6>
+
+<h6>The company accepts all your personal information in good faith as being truthful and accurate. Legal action may be initiated for any false or inaccurate information and you agree to indemnify FookeryDine 
+</h6>
+ 
+
+What are Log Files and what do you do with them?
+
+<h6>We use IP addresses to analyse trends, administer the site, track user’s movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information.</h6>
+
+<h6>Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL.</h6>
+
+<h6>This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your prior permission.</h6>
+
+ 
+
+What are links to the website?
+
+<h6>You may not create a link to any page of this website without our prior written consent.</h6>
+
+<h6>If you do create a link to a page of this website you do so at your own risk and the exclusions and limitations set out above will apply to your use of this website by linking to it.</h6>
+
+ 
+
+What are links from the website?
+
+<h6>We do not monitor or review the content of other party’s websites which are linked to this website.</h6>
+
+<h6>Opinions expressed or material appearing on such websites are not necessarily shared or endorsed by us and FookeryDine should not be regarded as the publisher of such opinions or material.</h6>
+
+<h6>Please be aware that we are not responsible for the privacy practices or content of these sites.</h6>
+
+<h6>We encourage our users to be aware when they leave our site and to read the privacy statements of these sites.</h6>
+
+<h6>You should evaluate the security of any other site connected to this site or accessed through this site yourself, before disclosing any personal information to them.</h6>
+
+<h6>FookeryDine will not accept any responsibility for any loss or damage in whatever manner, howsoever caused, resulting from your disclosure of personal information to third parties.</h6>
+
+<h6>We reserve the right to remove any content that we deem inappropriate.
+</h6>
+ 
+
+How can I communicate with FookeryDine?
+
+<h6>You can call our 24 hour FookeryConcierge at 9811573286 for reservations or any additional queries.</h6>
+
+<h6>You may also write to us or go to the contact us page to submit your query and we will respond to you as soon as possible.</h6>
+
+<h6>This company is registered in, New Delhi India. </h6>
+
+ 
+
+<h6>How often does FookeryDine change their policies and will we be notified?</h6>
+
+<h6>FookeryDine reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms.</h6>
+
+<h6>If there are any changes to our privacy policy or terms of use, we will announce that these changes have been made on our home page and on other key pages on our site.
+</h6>
+
+<h6>If there are any changes in how we use our users’ personally identifiable information, notification by e-mail or postal mail will be made to those affected by this change.
+</h6>
+
+<h6>Any changes to our privacy policy will be posted on our web site 7 days prior to these changes taking place. You are therefore advised to re-read this statement on a regular basis.</h6>
+
+ 
+
+What is your spam policy?
+
+<h6>No communication tool is allowed to be used on the site to transmit any bulk communication. </h6>
+
+
+What is your anti-fraud policy?
+
+<h6>If we understand that a specific account is being used in a Fraudulent manner (e.g making many bookings and then cancelling or no shows, making multiple accounts just to get extra FookeryPoints of cashbacks etc), FookeryDine reserves the rights to block the account. Decision of FookeryDine will be final and binding in such scenarios.</h6>
+
+ 
+
+How can I raise a claim against FookeryDine?
+
+<h6>Any cause of action arising out of or related to the FookeryDine websites or mobile apps must commence within 15 days after the cause of action accrues otherwise it will be permanently barred.</h6>
+
+ 
+
+What does my acceptance of the privacy statement mean?
+
+<h6>By using FookeryDine services, you signify your acceptance of this Privacy Statement.</h6>
+
+<h6>We reserve the right, to modify this Privacy Statement at any time.</h6>
+
+<h6>We reserve the right to terminate your access or use of service without any prior notice or take any other legal action if anyone violates these terms.</h6>
+
+<h6>Right of admission to the website is reserved.</h6>
+
+ 
+
+Copyright Infringement and Grievance Redressal Mechanism:
+
+<h6>FookeryDine is not liable for any infringement of copyright arising out of materials posted on or transmitted through the site or mobile apps, or items advertised on the site or mobile apps, by end users or any other third parties.</h6>
+ 
+
+Redressal Mechanism
+
+<h6>Any complaints, abuse or concerns with regards to content and or comment or breach of these terms shall be immediately informed to the designated Grievance Officer as mentioned below in writing or through email signed with the electronic signature to  or can be  </h6>
+
+<h6>Mr. Kartik Singhal </h6>
+
+<h6>1313e Govindpuri Kalkaji 
+
+ - 110019</h6>
+
+<h6>Ph: +919811573286</h6>
+
+Please provide the following information in your complaint:-
+
+<h6>Identification of copyrighted work claimed to be infringed along with address telephone number or email address of the claiming party.</h6>
+<h6>A statement that the complaining party has a good-faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent or the law.</h6>
+<h6>A statement, under penalty of perjury, that the information in the notice of copyright infringement is accurate, and that the complaining party is authorised to act on behalf of the owner of the right that is allegedly infringed.</h6>
+<h6>These terms and conditions form part of the Agreement between the Client and FookeryDine. Accessing this website and/or making a booking or Agreement indicates your understanding, agreement to and acceptance, of the Disclaimer Notice and the full Terms and Conditions contained herein.</h6>
+
+
+</footer>
+          
+            <footer class="w3-padding-16 w3-white w3-small w3-center" id="footer">
+</footer>
+    
+     
+  <!-- Footer -->
+  <footer class="w3-padding-16 w3-black w3-small w3-center" id="footer">
+<div class="row">
+  <div class="column" style="background-color: black;">
+    <h3>Fookery</h3>
+    <a href=""><p>About us</p></a>
+  <a href=""><p>Food Trends</p></a>
+  <a href=""><p>Contact us</p></a>
+  </div>
+    <div class="column" style="background-color: black;">
+    <h3>For You</h3>
+ <a href=""><p>Points Redemption</p></a>
+ <a href=""><p>Refers & Earn</p></a>
+ <a href=""><p>Terms and Conditions</p></a>
+ <a href=""><p>Privacy Policy</p></a>
+  </div>
+</div>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">© copyright 2024, FOOKERY. All rights reserved.</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none
+'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+      
