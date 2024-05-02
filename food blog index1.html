@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FOOD TRENDS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16 px;
+  padding: 10 px;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(1.6, 1.6, 1.6, 1.6);
+  margin: 32px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+  .container {
+  padding: 16px;
+}
+
+img {
+  height: 150%;
+  width:100%;
+padding: 10px;
+color:blue;
+}
+
+.text {
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+
+.title {
+  color: ;
+}
+
+.button {
+  background-color: #99A3A3; /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+a{
+  text-decoration: none;
+}
+.button2 {background-color: #F6BE00; /* Blue */
+border: none;
+  color: white;
+  padding: 12px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 100%;
+    display: circle;
+  }
+
+
+
+
+{
+        background: linear-gradient(
+            to right,
+           black 0%,
+           black 50%,
+           black 75%,
+           black 100%
+        );
+    }
+h{
+        padding: 7px;
+        text-align: center;
+        color: #99A3A3;
+        font-size: 0.5 rem;
+    }
+    h5{
+        padding: 7px;
+        text-align: center;
+        color: blue;
+        font-size: 0.5 rem;
+    }
+h4{
+        padding: 7px;
+        text-align: center;
+        color: #F6BE00;
+        font-size: 0.5 rem;
+    }
+h2{
+        padding: 2px;
+        text-align: left;
+        color: #008080;
+        font-size: 1.5 rem;
+   }
+h3{
+        padding: 7px;
+        text-align: center;
+        color: blue;
+        font-size: 0.5 rem;
+   }
+
+p1{
+        padding: 5px;
+        text-align: left;
+        color: black;
+        font-size: 50 px;
+   }
+
+p{
+        padding: 5px;
+        text-align: center;
+        color: white;
+        font-size: 50 px;
+   }
+   
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+</style>
+</head>
+<body class="content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+ <mark class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+   <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h1 class="w3-wide"><b>FOOKERY</b></h1>
+  </div>
+  <ol><a href="index1.html">HOME</a></ol>
+    <h3>Discover</h3>
+<ol><a href="1.html">Table Bookings</a></ol>
+<ol><a href="2.html">Delivery near me</a></ol>
+<ol><a href="3.html">Takeaway near me</a></ol>
+<ol><a href="4.html">Fast Food near me</a></ol>
+<ol><a href="5.html">Prepaid Deals near me</a></ol>
+    <h3>.For Restaurants</h3>
+<ol><a href="6.html">List Your Restaurant</a></ol>
+<ol><a href="7.html">Restaurant saas</a></ol>
+<h3>More</h3>
+<ol><a href="8.html">Food Critics</a></ol>
+<ol><a href="9.html">Advisory Council</a></ol>
+
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</mark>
+<main>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-medium w3-black w3-medium">
+  <section class="w3-bar-item w3-padding-24 w3-wide">FOOKERY</section>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px"></div>
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- First Photo Grid-->
+  <!-- Product grid -->
+  
+ <a href="blog/fi1/fb10.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f10/f10.1.jpg">
+      </div>
+      <div class="text">
+        <h4>PANEER BUTTER MASALA</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+
+ <a href="blog/fi1/fb9.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+      <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f9/f9.1.jpg">
+      </div>
+      <div class="text">
+        <h4>SWEET CORN SOUP</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+ <a href="blog/fi1/fb8.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f8/f8.1.jpg">
+      </div>
+      <div class="text">
+        <h4>PANEER TIKKA</h4>
+      </div>
+    </div>    
+</div>
+</a>
+         
+
+   <a href="blog/fi1/fb7.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f7/f7.1.jpg">
+      </div>
+      <div class="text">
+        <h4>INSTANT POT MASALE BHAT</h4>
+      </div>
+    </div>    
+</div>
+</a>
+       
+      
+
+    <a href="blog/fi1/fb6.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f6/f6.1.jpg">
+      </div>
+      <div class="text">
+        <h4>MISAL PAV</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+  
+ <a href="blog/fi1/fb5.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f5/f5.1.jpg">
+      </div>
+      <div class="text">
+        <h4>EASY PANEER KATHI ROLL</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+
+ <a href="blog/fi1/fb4.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f4/f4.1.jpg">
+      </div>
+      <div class="text">
+        <h4>UTTAPAM</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+ <a href="blog/fi1/fb3.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f3/f3.1.jpg">
+      </div>
+      <div class="text">
+        <h4>MUMBAI PAV BHAJI</h4>
+      </div>
+    </div>    
+</div>
+</a>
+         
+
+        <a href="blog/fi1/fb2.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+          <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f2/f2.1.jpg">
+      </div>
+      <div class="text">
+        <h4>PANEER BIRYANI</h4>
+      </div>
+    </div>    
+</div>
+</a>
+       
+      
+
+    <a href="blog/fi1/fb1.html">
+     <div class="card">
+      <div class="container">
+      <div class="image">
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/blog-img/fi1/f1/f1.1.jpgg">
+      </div>
+      <div class="text">
+        <h4>JALAPENO CORN AND CHEESE SAMOSAS</h4>
+      </div>
+    </div>    
+</div>
+</a>
+
+
+    
+  
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="food blog index1.html" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="food blog index1.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="fi2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="fi3.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="fi4.html" class="w3-bar-item w3-button w3-hover-black">4</a>
+       <a href="fi5.html" class="w3-bar-item w3-button w3-hover-black">5</a>
+      <a href="fi6.html" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+</main>
+ <!-- Footer -->
+ <footer class="w3-padding-16 w3-black w3-small w3-center" id="footer">
+<div class="row">
+  <div class="column" style="background-color: black;">
+    <h3>Fookery</h3>
+    <a href="about us.html"><p>About us</p></a>
+  <a href="food blog index1.html"><p>Food Trends</p></a>
+  <a href="contact.html"><p>Contact us</p></a>
+  </div>
+    <div class="column" style="background-color: black;">
+    <h3>For You</h3>
+ <a href=".html"><p>Points Redemption</p></a>
+ <a href=".html"><p>Refers & Earn</p></a>
+ <a href="terms.html"><p>Terms and Conditions</p></a>
+ <a href="privacy policies.html"><p>Privacy Policy</p></a>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+  <footer class="w3-padding-8 w3-black w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+</footer>
+
+  <div class="w3-black w3-center w3-padding-16">© copyright 2024, FOOKERY. All rights reserved.</a></div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
