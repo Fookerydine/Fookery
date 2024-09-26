@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RAJOURI HOUSE CAFE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  font-size: 15px;
+  z-index: 1;
+  bottom: 12%;
+  left: 100%;
+  margin-left: -100px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.mybox1 { 
+    display: none; 
+    font-size: 13px;
+    color: #000;
+}button { 
+    padding: 10px; 
+    font-size: 13px; 
+    font-weight: 700; 
+    text-align: left;
+    color: #008080; 
+    border: none; 
+    border-radius: 0px; 
+    background-color: #e0e5e5; 
+    margin-left: 250px; 
+} 
+
+button2 {background-color: #F6BE00; /* Blue */
+border: none;
+  color: white;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+  
+button3 { 
+    padding: 10px; 
+    font-size: 13px; 
+    font-weight: 700; 
+    text-align: left;
+    color: #008080; 
+    border: none; 
+    border-radius: 0px; 
+    background-color: #e0e5e5; 
+    margin-left: 0px; 
+} 
+
+h1{
+        padding: 1px;
+        text-align: center;
+        color: black;
+        font-size: 0.5 rem;
+    }
+h2{
+  color: black;
+font-size: 1.75rem;
+}
+
+h3{
+        padding: 10px;
+        text-align: center;
+        color: blue;
+        font-size: 1.5 rem;
+    }
+p2{
+        padding: 0.1px;
+        text-align: left;
+        color: #99A3A3;
+        font-size: 0.5 rem;
+    }
+p1{
+        padding: 10px;
+        text-align: center;
+        color:black;
+         }
+
+p3{
+ padding: 1px;
+        text-align: center;
+        color:black;
+    }
+    
+h4{
+        padding: 0.1px;
+        text-align: left;
+        color: #F6BE00;
+        font-size: 0.5 rem;
+    }
+h6{
+        padding: 0.1px;
+        text-align: left;
+        color: #008080;
+        font-size: 0.5 rem;
+    }
+p{
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        font-size: 0.5 rem;
+    }
+
+p1{
+        padding-left: 10px;
+        text-align: center;
+        color: blue;
+        font-size: 0.5 rem;
+    }
+    
+main{
+        background: linear-gradient(
+            to top,
+            #000 0%,
+            #000 50%,
+            #000 75%,
+            #000 100%
+        );
+    }
+
+
+nav
+{
+        background: linear-gradient(
+            to top,
+            #e0e5e5 0%,
+            #e0e5e5 50%,
+            #e0e5e5 75%,
+            #e0e5e5 100%
+        );
+        
+        padding: 5px;
+        color: silver;
+        font-size: 1.5rem;
+    }
+
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #F6BE00;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0e5e5;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  text-align: center
+}
+.menu-group a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+ 
+div.scrollmenu {
+  background-color: #eeeeee;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu li{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu li:hover {
+  background-color: #f5f5f5;
+}
+
+.img-group img{
+  max-height: 250px;
+  max-width:150px;
+padding: 10px;
+color:blue;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  max-height:450px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.collapsible {
+  background-color: #eeeeee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f5f5f5;
+}
+
+.content {
+  padding: 1px;
+  display: none;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+span {
+  padding: 2px;
+        text-align: left;
+        color: #000;
+        font-size: 2rem;
+}
+.main-group span{
+  padding: 0px;
+  color: #000;
+  font-size: 1rem;
+}
+.main-group span1{
+  padding: 0px;
+  color: #fff;
+  font-size: 1rem;
+}
+.main-group h4{
+  padding: 0px;
+  color: #F6BE00;
+  font-size: 1.5rem;
+}
+
+.main-group h5{
+  padding: 0px;
+  color: #FFF;
+  font-size: 1.5rem;
+}
+.checked {
+  padding: 2px;
+        text-align: center;
+        color: orange;
+        font-size:1.5rem;
+}
+.column {
+  float: left;
+  width: 50%;
+  color:#e0e5e5;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+  padding: 2px;
+        text-align: center;
+        color: orange;
+        font-size:1.5rem;
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body style="background: linear-gradient(
+            to bottom,
+            white 0%,
+            white 50%,
+            white 75%,
+            white 100%
+        );">
+
+<!-- Sidebar/menu -->
+<mark class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+   <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h1 class="w3-wide"><b>FOOKERY</b></h1>
+  </div>
+  <h3>Discover</h3>
+    <ol><a href="index1.html">HOME</a></ol>
+    <h3>Discover</h3>
+<ol><a href="1.html">Table Bookings</a></ol>
+<ol><a href="2.html">Delivery near me</a></ol>
+<ol><a href="3.html">Takeaway near me</a></ol>
+<ol><a href="4.html">Fast Food near me</a></ol>
+<ol><a href="5.html">Prepaid Deals near me</a></ol>
+    <h3>.For Restaurants</h3>
+<ol><a href="6.html">List Your Restaurant</a></ol>
+<ol><a href="7.html">Restaurant saas</a></ol>
+<h3>More</h3>
+<ol><a href="8.html">Food Critics</a></ol>
+<ol><a href="9.html">Advisory Council</a></ol>
+
+  
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</mark>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-medium">
+  <div class="w3-bar-item w3-padding-24 w3-wide">RAJOURI HOUSE CAFE</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:70px"></div>
+<main>
+    <section class="section" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                <div class="left-images">
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c19/19.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c19/19.2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c19/19.3.jpg" style="width:100%">
+  </div>
+<div class="mySlides1">
+    <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c19/19.4.jpg" style="width:100%">
+  </div>
+
+
+
+ <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+                    
+<h4>Rajouri House Cafe</h4>
+<p2>Select Citywalk Mall, Saket</p2>
+<h6>Chinese, Pan Asian</h6>
+<hr>
+<div class="popup" onclick="myFunction()">Open from 12:00 PM -11:30 PM<span class="popuptext" id="myPopup">
+  Monday 12:00 PM -11:30 PM
+  Tuesday 12:00 PM -11:30 PM
+  Wednesday 12:00 PM -11:30 PM
+  Thursday 12:00 PM -11:30 PM
+  Friday 12:00 PM -11:30 PM
+  Saturday 12:00 PM -11:30 PM
+  Sunday 12:00 PM -11:30 PM
+  </span>
+</div>
+</main>
+<!-- Sub-menu -->
+
+  <menu class="w3-padding-12 w3-light-grey w3-small w3-center" id="menu">
+    <div class="w3-row-padding">
+
+<section class="menu-group">
+   <a href="o19.html">Overview</a>
+   </section>
+   <section class="menu-group">
+   <a href="m19.html">Menu</a>
+   </section>
+<section class="menu-group">
+   <a href="r19.html">Review</a>
+   </section>
+   </div>
+    </menu>
+    <!-- ***** Product Area Ends ***** -->
+    
+<!-- review -->
+<nav class=" w3-light-grey w3-small w3-left" id="nav">
+<h2>About</h2>
+<div class="mybox"> 
+<div> 
+Yeti is a unique restaurant concept that offers an authentic Himalayan dining experience. Our cooks are from the respective regions and use original recipes to prepare our dishes.
+<span id="span1">...</span> 
+<span class="mybox1" id="mybox1id">
+  </span> 
+</div> 
+<button id="mybuttonid"onclick="changeReadMore()">Read More 
+</button> 
+</div> 
+</nav>
+
+<script>
+function changeReadMore() { 
+    const mycontent = 
+        document.getElementById('mybox1id'); 
+    const mybutton = 
+        document.getElementById('mybuttonid'); 
+    const span1 = document.getElementById("span1") 
+  
+    if (mycontent.style.display === 'none'
+        || mycontent.style.display === '') { 
+        mycontent.style.display = 'inline'; 
+        span1.style.display = "none"; 
+        mybutton.textContent = 'Read Less'; 
+    } else { 
+        mycontent.style.display = 'none'; 
+        mybutton.textContent = 'Read More'; 
+        span1.style.display = "inline"; 
+    } 
+} 
+</script>
+
+<!-- Footer -->
+<article class="w3-padding-16 w3-black w3-small w3-center" id="article">
+<div class="row">
+  <div class="column" style="background-color: #fff;">
+
+<section class="main-group">
+<h4>Service Options</h4>
+<span>&#10003; Delivery</span>
+</section>
+<section class="main-group">
+<span>&#10003; Outdoor seating</span>
+</section>
+<section class="main-group">
+<span>&#10003; Takeaway</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Highlights</h4>
+<span>&#10003; Live music</span>
+</section>
+<section class="main-group">
+<span>&#10003; Sports</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Offerings</h4>
+<span>&#10003; alcohol</span>
+</section>
+<section class="main-group">
+<span>&#10003; coffee</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Dining Options</h4>
+<span>&#10003; Lunch</span>
+</section>
+<section class="main-group">
+<span>&#10003; Dessert</span>
+</section>
+<section class="main-group">
+<span>&#10003; Brunch</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Amenities</h4>
+<span>&#10003; Bar on site</span>
+</section>
+<section class="main-group">
+<span>&#10003; Free Wi-Fi</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Atmosphere</h4>
+<span>&#10003; Casual</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Crowd</h4>
+<span>&#10003; Groups</span>
+</section>
+<section class="main-group">
+<span>&#10003; Family Friendly</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Planning</h4>
+<span>&#10003; Accepts reservations</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Payments</h4>
+<span>&#10003; Credit cards</span>
+</section>
+<section class="main-group">
+<span>&#10003; Debit cards</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Children</h4>
+<span>&#10003; Good for kids</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h4>Parking</h4>
+<span>&#10003; Paid parking lots</span>
+</section>
+<section class="main-group">
+<span>&#10003; Valet parking</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+</div>
+
+<div class="column" style="background-color: #fff;">
+    
+<section class="main-group">
+<h5>Service </h5>
+<span>&#10003; Dine-in</span>
+</section>
+<section class="main-group">
+<span>&#10003; Non-contact delivery</span>
+</section>
+<section class="main-group">
+<span>&#10003; Kerbside pickup</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Live performances</span>
+</section>
+<section class="main-group">
+<span1>&#10003; </span1>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Small plates</span>
+</section>
+<section class="main-group">
+<span1>&#10003; </span1>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Dinner</span>
+</section>
+<section class="main-group">
+<span>&#10003; Seating</span>
+</section>
+<section class="main-group">
+<span>&#10003; Catering</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Gender-neutral toilets</span>
+</section>
+<section class="main-group">
+<span>&#10003; Wi-Fi</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Cosy</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; LGBTQ Friendly</span>
+</section>
+<section class="main-group">
+<span1>&#10003; </span1>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span1>&#10003; Dine-in</span1>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span>&#10003; Mobile wallets</span>
+</section>
+<section class="main-group">
+<span>&#10003; Mastercard</span>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+<h5>Service Options</h5>
+<span1>&#10003; </span1>
+</section>
+<hr style="height:1px;border-width:0;background-color: black">
+
+<section class="main-group">
+  <h5>Service options</h5>
+  <span>&#10003; Paid street parking</span>
+</section>
+<section class="main-group">
+<span1>&#10003; </span1>
+</section>
+<hr style="height:1px;bordet-width:0;background-color: black">
+
+</article>
+
+<!-- features -->
+<nav class="w3-padding-24  w3-small w3-center" id="nav">
+
+   <h2>above NYKAA Trends showroom, F-122, Highstreet, Main Market, Rajouri Garden, New Delhi, Delhi 110027</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.518986782453!2d77.11949277767937!3d28.644175183547794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03dc42d7191d%3A0x65fb4ff7a30e4061!2sRajouri%20House%20Cafe%20%26%20Restro!5e0!3m2!1sen!2sin!4v1719070171823!5m2!1sen!2sin" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</nav>
+
+<!-- Footer -->
+  <footer class="w3-padding-24 w3-white w3-small w3-center" id="footer">
+    <div class="w3-row-padding"></div>
+
+<a href="booking.html"><button2 type="button" class="block">BOOK NOW</button2></a>
+
+<h3>You may like:</h3>
+<div class="scrollmenu">
+  
+  <a href="o3.html">
+<li class="w3-padding-16">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c3/3.1.jpg" style="width:125px">
+      <div class="container">
+        <h6>Miss Nora</h6>
+        </a>
+        
+<a href="o8.html">
+<li class="w3-padding-16">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c8/8.1.png" style="width:125px">
+      <div class="container">
+        <h6>Saucy Cocktail Garden</h6>
+        </a>
+
+<a href="o12.html">
+<li class="w3-padding-16">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c12/restaurant12.1.jpg" style="width:125px">
+      <div class="container">
+        <h6>IKK Panjab</h6>
+        </a>
+        
+<a href="o24.html">
+<li class="w3-padding-16">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c24/24.1.jpg" style="width:125px">
+      <div class="container">
+        <h6>The coffee bean & tea leaf</h6>
+</a>
+
+
+</div>
+</footer>
+
+<!-- faq -->
+  <mark class=" w3-white w3-large w3-center" id="mark">
+    <div class="w3-row-padding">
+<p1>Frequently Asked Questions:</p1>
+<button3 type="button" class="collapsible">
+Does Rajouri House Cafe serve pure vegetarian dishes?
+</button3>
+<div class="content">
+  <p1>
+No, Rajouri House Cafe does not serve pure vegetarian dishes.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+Does Rajouri House Cafe restaurant have a bar or serve alcohol?
+</button3>
+<div class="content">
+  <p1>
+No, Rajouri House Cafe does not serve alcohol.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+What cuisines are served at Rajouri House Cafe?
+</button3>
+<div class="content">
+  <p1>
+The main cuisine served at Rajouri House Cafe is Multicuisine.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+What are the best and must-try dishes at Rajouri House Cafe?
+</button3>
+<div class="content">
+  <p1>
+Must try dish at Rajouri House Cafe.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+Does Rajouri House Cafe serve buffet?
+</button3>
+<div class="content">
+  <p1>
+No, Rajouri House Cafe does not serve buffet.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+Is there a parking facility at Rajouri House Cafe?
+</button3>
+<div class="content">
+  <p1>
+No, a parking facility is not available at Rajouri House Cafe.</p1>
+</div>
+
+<button3 type="button" class="collapsible">
+Does Rajouri House Cafe restaurant play live music?
+</button3>
+<div class="content">
+  <p1>
+No, Rajouri House Cafe doesn't play live music.</p1>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
+</mark>
+
+<!-- Footer -->
+  <footer class="w3-padding-16 w3-white w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+</div>
+</footer>
+
+
+  <!-- Footer -->
+  
+
+
+ <footer class="w3-padding-16 w3-black w3-small w3-center" id="footer">
+<div class="row">
+  <div class="column" style="background-color: black;">
+    <h3>Fookery</h3>
+    <a href="about us.html"><p>About us</p></a>
+  <a href="food blog index1.html"><p>Food Trends</p></a>
+  <a href="contact.html"><p>Contact us</p></a>
+  </div>
+    <div class="column" style="background-color: black;">
+    <h3>For You</h3>
+ <a href=".html"><p>Points Redemption</p></a>
+ <a href=".html"><p>Refers & Earn</p></a>
+ <a href="terms.html"><p>Terms and Conditions</p></a>
+ <a href="privacy policies.html"><p>Privacy Policy</p></a>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+  <footer class="w3-padding-8 w3-black w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+</footer>
+
+  <div class="w3-black w3-center w3-padding-16">© copyright 2024, FOOKERY. All rights reserved.</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none
+'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+      
