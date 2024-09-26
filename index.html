@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(1.6, 1.6, 1.6, 1.6);
+  margin: 10px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+div.scrollmenu {
+  background-color: #e5e5e5;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu li{
+  display: inline-block;
+  color: teal;
+  text-align: center;
+  padding: 5.5px;
+  text-decoration: none;
+}
+
+div.scrollmenu li:hover {
+  background-color: ;
+}
+
+div.scrollmenus {
+  background-color: #e5e5e5;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenus li{
+  display: inline-block;
+  color: teal;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+div.scrollmenus li:hover {
+  background-color: ;
+}
+
+.text {
+  font-size: 10px;
+  padding-right: 0px;
+}
+
+
+.title {
+  color: ;
+}
+
+.button {
+  background-color: #99A3A3; /* Green */
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+a{
+  text-decoration: none;
+}
+.button2 {background-color: #F6BE00; /* Blue */
+border: none;
+  color: white;
+  padding: 12px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 18px;
+}
+
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 100%;
+    display: circle;
+  }
+
+h{
+        padding: 1px;
+        text-align: left;
+        color: #99A3A3;
+        font-size: 0.5 rem;
+    }
+h3{
+        padding: 1px;
+        text-align: center;
+        color: blue;
+        font-size: 0.5 rem;
+    }
+h4{
+        padding: 1px;
+        text-align: left;
+        color: #F6BE00;
+        font-size: 1.5rem;
+   }
+h5{
+        padding: 10 px;
+        text-align: left;
+        color: #008080;
+        font-size: 1.5 rem;
+   }
+
+p{
+        padding: 10 px;
+        text-align: centre;
+        color: white;
+        font-size: 50 px;
+   }
+   
+   .mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+}
+.slideshow img{
+  width: 600px;
+  }
+
+
+   /* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+   /* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+.active {
+  background-color: #717171;
+}
+   /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+   
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; 
+  -webkit-text-size-adjust: none; 
+}
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<mark class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+   <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h1 class="w3-wide"><b>FOOKERY</b></h1>
+  </div>
+<ol><a href="index1.html">HOME</a></ol>
+    <h3>Discover</h3>
+<ol><a href="1.html">Table Bookings</a></ol>
+<ol><a href="2.html">Delivery near me</a></ol>
+<ol><a href="3.html">Takeaway near me</a></ol>
+<ol><a href="4.html">Fast Food near me</a></ol>
+<ol><a href="5.html">Prepaid Deals near me</a></ol>
+    <h3>.For Restaurants</h3>
+<ol><a href="6.html">List Your Restaurant</a></ol>
+<ol><a href="7.html">Restaurant saas</a></ol>
+<h3>More</h3>
+<ol><a href="8.html">Food Critics</a></ol>
+<ol><a href="9.html">Advisory Council</a></ol>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
+</mark>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-black ">
+  <section class="w3-bar-item w3-padding-1 w3-wide w3-large">FOOKERY</section>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding- w3-large w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+     
+     <section class="w3-padding-30 w3-wide w3-center w3-large">
+    <p class="w3-right">
+  <form action="https://www.google.com" class="form-inline ml-auto d-none d-md-block">
+      
+ <input type="text" name="search" id="search" placeholder="Search Restaurant, Locations or cuisines" class="form-control form-control-sm">
+ <i class="fa fa-search"></i>
+            </form>
+
+    </p>
+     </section>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:90px"></div>
+  
+  
+  
+  <!-- Top header -->
+<div class="w3-large w3-dark-grey">
+  <p>Location</p>
+</div>
+
+<!--fixed menu-->
+
+<div class="scrollmenu">
+  <a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/1.jpg" style="width:55px">
+      <div class="container">
+      Breakfast
+  </a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/2.jpg" style="width:55px">
+      <div class="container">
+        Lunch
+</a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/3.jpg" style="width:55px">
+      <div class="container">
+        Dinner
+</a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/4.jpg" style="width:55px">
+      <div class="container">
+        Snacks
+</a>
+
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/5.jpg" style="width:55px">
+      <div class="container">
+        Near Me
+</a>
+</div>
+</div>
+
+ <!-- Image header -->
+  <div class="w3-display-container w3-container w3-large">
+   
+   
+      
+    </div>
+  </div>
+  
+<!--slideshow-->
+ <footer class="w3-padding-16 w3-white w3-small w3-center" id="footer">
+    <div class="w3-row-padding"></div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <section class="slideshow"> 
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/16.jpg" style="width:360px">
+  </section>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <section class="slideshow"> 
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/17.jpg" style="width:360px">
+  </section>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <section class="slideshow"> 
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/18.jpg" style="width:360px" >
+  </section>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <section class="slideshow"> 
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/14.jpg" style="width:360px">
+  </section>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <section class="slideshow"> 
+  <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/19.jpg" style="width:360px">
+  </section>
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+<span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+</footer>
+<!--mood-->
+
+
+<div class="scrollmenus">
+  <p></p>
+<div class="w3-medium w3-center">  What's Your Mood?</div>
+  <a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/6.jpg" style="width:65px">
+      <div class="container">
+      North Indian
+  </a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/index-img/icon/7.jpg" style="width:65px">
+      <div class="container">
+        South Indian
+</a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://github.com/Fookerydine/Fookery/blob/main/index-img/icon/8.jpg?raw=true" style="width:65px">
+      <div class="container">
+      chinese
+</a>
+        
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://github.com/Fookerydine/Fookery/blob/main/index-img/icon/9.jpg?raw=true" style="width:65px">
+      <div class="container">
+        Countinatal
+</a>
+
+<a href=""> 
+<li class="w3-padding-10px">
+<img src="https://github.com/Fookerydine/Fookery/blob/main/index-img/icon/10.jpg?raw=true" style="width:65px">
+      <div class="container">
+        See More
+</a>
+</div>
+</div>
+    
+  <!-- Product grid -->
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c1/restaurant1.1.jpeg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>China Bisto</h4>
+<h>Saket, South Delhi</h>
+<h5>Chinese, Pan Asia</h5>
+<button class="button"><a href="o1.html">PREVIEW</a></button>
+<button class="button2"><a href="o1.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c2/2.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Matchbox</h4>
+<h>Hauz khas, South Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o2.html">PREVIEW</a></button>
+<button class="button2"><a href="o2.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c3/3.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Miss Nora</h4>
+<h>Rajouri Garden, West Delhi</h>
+<h5>Pan Asia</h5>
+<button class="button"><a href="o3.html">PREVIEW</a></button>
+<button class="button2"><a href="o3.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c4/4.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The Mansion</h4>
+<h>Hauz Khas, South Delhi</h>
+<h5>Finger Food, Cocktail</h5>
+<button class="button"><a href="o4.html">PREVIEW</a></button>
+<button class="button2"><a href="o4.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c5/5.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Kohu</h4>
+<h>Punjabi Bagh, West Delhi</h>
+<h5>Chinese, Multicuisine</h5>
+<button class="button"><a href="o5.html">PREVIEW</a></button>
+<button class="button2"><a href="o5.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c6/6.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Ce La Vie</h4>
+<h>Connaught Place, Central Delhi</h>
+<h5>Italian, Pan Asia</h5>
+<button class="button"><a href="o6.html">PREVIEW</a></button>
+<button class="button2"><a href="o6.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c7/7.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>VietNOM</h4>
+<h>Saket, South Delhi</h>
+<h5>Vietnamese, Asian</h5>
+<button class="button"><a href="o7.html">PREVIEW</a></button>
+<button class="button2"><a href="o7.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c8/8.1.png" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Saucy Cocktail</h4>
+<h>Rajouri Garden, West Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o8.html">PREVIEW</a></button>
+<button class="button2"><a href="o8.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c9/9.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The G T Road</h4>
+<h>Connaught Place, Central Delhi</h>
+<h5>Beverages, Desserts</h5>
+<button class="button"><a href="o9.html">PREVIEW</a></button>
+<button class="button2"><a href="o9.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c10/restaurant10.1.jpeg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Have More</h4>
+<h>Saket, South Delhi</h>
+<h5>North Indian</h5>
+<button class="button"><a href="o10.html">PREVIEW</a></button>
+<button class="button2"><a href="o10.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+     
+         <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c11/restaurant11.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The Record room</h4>
+<h>Hauz Khas, South Delhi</h>
+<h5>Cocktail, Multicuisine</h5>
+<button class="button"><a href="o11.html">PREVIEW</a></button>
+<button class="button2"><a href="o11.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c12/restaurant12.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>IKK Panjab</h4>
+<h>Rajouri Garden, West Delhi</h>
+<h5>North Indian</h5>
+<button class="button"><a href="o12.html">PREVIEW</a></button>
+<button class="button2"><a href="o12.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c13/restaurant13.1.jpeg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The Dom</h4>
+<h>Punjabi Bagh, West Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o13.html">PREVIEW</a></button>
+<button class="button2"><a href="o13.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c14/restaurant14.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Somewhere </h4>
+<h>Connaught Place, Central Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o14.html">PREVIEW</a></button>
+<button class="button2"><a href="o14.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c15/restaurant15.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Downtown villag</h4>
+<h>Hauz Khas, South Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o15.html">PREVIEW</a></button>
+<button class="button2"><a href="o15.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c16/16.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Pub Ji 2.0</h4>
+<h>Punjabi Bagh, West Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o16.html">PREVIEW</a></button>
+<button class="button2"><a href="o16.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c17/17.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Chili's</h4>
+<h>Saket, South Delhi</h>
+<h5>Mexican</h5>
+<button class="button"><a href="o17.html">PREVIEW</a></button>
+<button class="button2"><a href="o17.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c18/18.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Yeti-The Himala</h4>
+<h>Connaught Place, Central Delhi</h>
+<h5>Chinese, Nepalise</h5>
+<button class="button"><a href="o18.html">PREVIEW</a></button>
+<button class="button2"><a href="o18.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c19/19.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Rajouri House </h4>
+<h>Rajouri Garden, West Delhi</h>
+<h5>Multicuisine</h5>
+<button class="button"><a href="o19.html">PREVIEW</a></button>
+<button class="button2"><a href="o19.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c20/20.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>TEO-Lounge& </h4>
+<h>Punjabi Bagh, West Delhi</h>
+<h5>Beverages, Chinese</h5>
+<button class="button"><a href="o20.html">PREVIEW</a></button>
+<button class="button2"><a href="o20.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c21/21.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Barbeque Nation</h4>
+<h>Saket, South Delhi</h>
+<h5>Multicuisine, Barbe</h5>
+<button class="button"><a href="o21.html">PREVIEW</a></button>
+<button class="button2"><a href="o21.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c22/22.1.jpeg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Dasaprakash</h4>
+<h>Connaught Place, Central Delhi</h>
+<h5>South Indian</h5>
+<button class="button"><a href="o22.html">PREVIEW</a></button>
+<button class="button2"><a href="o22.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c23/23.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>Chicago Pizza</h4>
+<h>Hauz Khas, South Delhi</h>
+<h5>Pizza</h5>
+<button class="button"><a href="o23.html">PREVIEW</a></button>
+<button class="button2"><a href="o23.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+
+<div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c24/24.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The Coffee Bean</h4>
+<h>Rajouri Garden, West Delhi</h>
+<h5>Coffee and Tea</h5>
+<button class="button"><a href="o24.html">PREVIEW</a></button>
+<button class="button2"><a href="o24.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+      
+    <div class="card">
+      <div class="container">
+      <div class="image">
+        <img src="https://raw.githubusercontent.com/Fookerydine/Fookery/main/cafe-img/cafeoverview-img/c25/25.1.jpg" style="width:140px">
+      </div>
+      <div class="text">
+        <h4>The Dineroom</h4>
+<h>Punjabi Bagh, West Delhi</h>
+<h5>Beverages, Chinese,</h5>
+<button class="button"><a href="o25.html">PREVIEW</a></button>
+<button class="button2"><a href="o25.html">BOOK NOW</a></button>
+      </div>
+    </div>    
+</div>
+     
+     <!--pagination-->
+       <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  <!-- Footer --> 
+ <footer class="w3-padding-16 w3-black w3-small w3-center" id="footer">
+<div class="row">
+  <div class="column" style="background-color: black;">
+    <h3>Fookery</h3>
+    <a href="about us.html"><p>About us</p></a>
+  <a href="food blog index1.html"><p>Food Trends</p></a>
+  <a href="contact.html"><p>Contact us</p></a>
+  </div>
+    <div class="column" style="background-color: black;">
+    <h3>For You</h3>
+ <a href=".html"><p>Points Redemption</p></a>
+ <a href=".html"><p>Refers & Earn</p></a>
+ <a href="terms.html"><p>Terms and Conditions</p></a>
+ <a href="privacy policies.html"><p>Privacy Policy</p></a>
+  </div>
+</div>
+ 
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">© copyright 2024, FOOKERY. All rights reserved.</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none
+'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides,2000); // Changeimage every 2 seconds
+}
+</script>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+      
